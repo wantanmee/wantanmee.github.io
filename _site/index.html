@@ -14,9 +14,23 @@
   
 
   
-    <title>wantanmee.github.io</title>
-    <meta name="description" content="blog">
-    <link rel="canonical" href="http://localhost:4000/">
+    
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>蘑菇云大仙的培育基地 | 记录下</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="蘑菇云大仙的培育基地" />
+<meta name="author" content="Kate Chen" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="记录下" />
+<meta property="og:description" content="记录下" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="蘑菇云大仙的培育基地" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://localhost:4000/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/so-simple-site-logo.png"},"name":"Kate Chen"},"name":"蘑菇云大仙的培育基地","headline":"蘑菇云大仙的培育基地","author":{"@type":"Person","name":"Kate Chen"},"description":"记录下","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
   
 
   <script>
@@ -27,7 +41,10 @@
   </script>
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <!-- start custom head snippets -->
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,400i,700,700i|Noto+Serif+SC:400,400i,700,700i">
+  <link rel="alternate" type="application/atom+xml" title="蘑菇云大仙的培育基地" href="/atom.xml">
+<!-- start custom head snippets -->
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
@@ -58,12 +75,16 @@
     <header class="masthead">
   <div class="wrap">
     
+      <a href="/" class="site-logo" rel="home" title="蘑菇云大仙的培育基地">
+        <img src="/images/so-simple-site-logo.png" class="site-logo-img animated fadeInDown" alt="蘑菇云大仙的培育基地">
+      </a>
+    
     
     
       
-        <h1 class="site-title animated fadeIn"><a href="/">wantanmee.github.io</a></h1>
+        <h1 class="site-title animated fadeIn"><a href="/">蘑菇云大仙的培育基地</a></h1>
       
-      <p class="site-description animated fadeIn" itemprop="description">blog</p>
+      <p class="site-description animated fadeIn" itemprop="description">记录下</p>
     
   </div>
 </header><!-- /.masthead -->
@@ -90,6 +111,92 @@
   <header class="entry-header">
     <h3 class="entry-title p-name">
       
+        <a href="/misc/2019/10/09/start-a-blog.html" rel="bookmark">又又又搞了个blog
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <p>我是按照github的教程，先建repo再clone，这样的话就没法用Jekyll的<a href="https://jekyllrb.com/docs/">Quickstar教程</a>的<code class="highlighter-rouge">jekyll new myblog</code>了，因为已经先有文件夹了。</p>
+
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+
+<span class="read-time">~1 min read</span>
+
+      <time class="entry-date dt-published" datetime="2019-10-09T00:00:00+08:00">2019-10-09
+  </time>
+    </footer>
+  
+</article>
+
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
+        <a href="/blog/%E6%8A%80%E6%9C%AF/2019/10/09/docker.html" rel="bookmark">又折腾docker
+</a>
+      
+    </h3>
+    
+  </header>
+  
+    <div class="entry-excerpt p-summary">
+      
+        <blockquote>
+  <p>docker for windows 版本</p>
+</blockquote>
+
+<h2 id="有用的命令">有用的命令</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 先确认docker装了</span>
+<span class="o">&gt;</span>docker <span class="nt">--version</span>
+
+<span class="o">&gt;</span>docker image <span class="nb">ls</span>
+<span class="o">&gt;</span>docker image <span class="nb">ls</span> <span class="nt">-a</span>
+<span class="o">&gt;</span>docker image rm IMAGE_ID
+
+<span class="o">&gt;</span>docker container <span class="nb">ls</span>
+<span class="o">&gt;</span>docker rm CONTAINER_ID
+<span class="c"># build dockerfile</span>
+<span class="o">&gt;</span>docker build <span class="nb">.</span>
+</code></pre></div></div>
+
+<h2 id="问题解决">问题解决</h2>
+
+<h3 id="docker-build-immediately-hangs-indefinitely-windows-10"><a href="https://github.com/docker/toolbox/issues/613">“docker build” immediately hangs indefinitely. Windows 10</a></h3>
+
+<p>解决办法里面有提到<a href="https://github.com/docker/toolbox/issues/613#issuecomment-464471215">https://github.com/docker/toolbox/issues/613#issuecomment-464471215</a>，就是加个.dockerignore文件</p>
+
+      
+    </div>
+  
+  
+    <footer class="entry-meta">
+      
+
+<span class="read-time">~1 min read</span>
+
+      <time class="entry-date dt-published" datetime="2019-10-09T00:00:00+08:00">2019-10-09
+  </time>
+    </footer>
+  
+</article>
+
+
+<article class="entry h-entry">
+  <header class="entry-header">
+    <h3 class="entry-title p-name">
+      
         <a href="/blog/2019/10/08/use-ffmpeg.html" rel="bookmark">研究了下ffmpeg
 </a>
       
@@ -107,7 +214,10 @@
   
     <footer class="entry-meta">
       
-      <time class="entry-date dt-published" datetime="2019-10-08T00:00:00+08:00">October 8, 2019
+
+<span class="read-time">~1 min read</span>
+
+      <time class="entry-date dt-published" datetime="2019-10-08T00:00:00+08:00">2019-10-08
   </time>
     </footer>
   
@@ -126,9 +236,9 @@
   <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->
-<div class="copyright">
+<div class="social-icons"><a class="social-icon" href="https://github.com/wantanmee"><i class="fab fa-github-square fa-2x" title="GitHub"></i></a><a class="social-icon" href="/atom.xml"><i class="fas fa-rss-square fa-2x" title="Feed"></i></a></div><div class="copyright">
     
-      <p>&copy; 2019 wantanmee.github.io. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+      <p>&copy; 2019 蘑菇云大仙的培育基地. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
     
   </div>
 </footer>

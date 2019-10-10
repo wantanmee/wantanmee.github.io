@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-09T15:44:07+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">蘑菇云大仙的培育基地</title><subtitle>记录下</subtitle><author><name>Kate Chen</name><email>kate.jy.chen@gmail.com</email></author><entry><title type="html">又折腾docker</title><link href="http://localhost:4000/blog/%E6%8A%80%E6%9C%AF/2019/10/09/docker.html" rel="alternate" type="text/html" title="又折腾docker" /><published>2019-10-09T00:00:00+08:00</published><updated>2019-10-09T00:00:00+08:00</updated><id>http://localhost:4000/blog/%E6%8A%80%E6%9C%AF/2019/10/09/docker</id><content type="html" xml:base="http://localhost:4000/blog/%E6%8A%80%E6%9C%AF/2019/10/09/docker.html">&lt;blockquote&gt;
+  &lt;p&gt;docker for windows 版本&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;有用的命令&quot;&gt;有用的命令&lt;/h2&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 先确认docker装了&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;docker &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;docker image &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;docker image &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;docker image rm IMAGE_ID
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;docker container &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;docker rm CONTAINER_ID
+&lt;span class=&quot;c&quot;&gt;# build dockerfile&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;docker build &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;问题解决&quot;&gt;问题解决&lt;/h2&gt;
+
+&lt;h3 id=&quot;docker-build-immediately-hangs-indefinitely-windows-10&quot;&gt;&lt;a href=&quot;https://github.com/docker/toolbox/issues/613&quot;&gt;“docker build” immediately hangs indefinitely. Windows 10&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;解决办法里面有提到&lt;a href=&quot;https://github.com/docker/toolbox/issues/613#issuecomment-464471215&quot;&gt;https://github.com/docker/toolbox/issues/613#issuecomment-464471215&lt;/a&gt;，就是加个.dockerignore文件&lt;/p&gt;</content><author><name>kate</name></author><category term="docker" /><summary type="html">docker for windows 版本 有用的命令 # 先确认docker装了 &amp;gt;docker --version &amp;gt;docker image ls &amp;gt;docker image ls -a &amp;gt;docker image rm IMAGE_ID &amp;gt;docker container ls &amp;gt;docker rm CONTAINER_ID # build dockerfile &amp;gt;docker build . 问题解决 “docker build” immediately hangs indefinitely. Windows 10 解决办法里面有提到https://github.com/docker/toolbox/issues/613#issuecomment-464471215，就是加个.dockerignore文件</summary></entry><entry><title type="html">又又又搞了个blog</title><link href="http://localhost:4000/misc/2019/10/09/start-a-blog.html" rel="alternate" type="text/html" title="又又又搞了个blog" /><published>2019-10-09T00:00:00+08:00</published><updated>2019-10-09T00:00:00+08:00</updated><id>http://localhost:4000/misc/2019/10/09/start-a-blog</id><content type="html" xml:base="http://localhost:4000/misc/2019/10/09/start-a-blog.html">&lt;p&gt;我是按照github的教程，先建repo再clone，这样的话就没法用Jekyll的&lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;Quickstar教程&lt;/a&gt;的&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new myblog&lt;/code&gt;了，因为已经先有文件夹了。&lt;/p&gt;
+
+&lt;p&gt;这种情况的话，就按照&lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/01-setup/&quot;&gt;Step by Step Tutorial&lt;/a&gt;里面先init，再加dependency好了。但是这样也不好，这样出来的是没有主题的，非常简陋。所以其实要先找一个主题。&lt;/p&gt;
+
+&lt;p&gt;于是又在&lt;a href=&quot;https://jekyllrb.com/docs/themes/&quot;&gt;Themes&lt;/a&gt;这里推荐的&lt;a href=&quot;https://jamstackthemes.dev/ssg/jekyll/&quot;&gt;https://jamstackthemes.dev/ssg/jekyll/&lt;/a&gt;里面随便找了个主题&lt;a href=&quot;https://github.com/mmistakes/so-simple-theme&quot;&gt;so-simple-theme&lt;/a&gt;。这个主题的说明文档还是挺详细的。暂时按照这个一步步来弄。样式当然不是很适合中文，以后再慢慢调整。&lt;/p&gt;
+
+&lt;p&gt;话说公司的网络真是折腾人， 每一步操作都需要proxy:(，比如&lt;code class=&quot;highlighter-rouge&quot;&gt;gem install --http-proxy http://company-proxy:80 jekyll-theme-so-simple&lt;/code&gt;, bundle的proxy是依赖于环境变量的，&lt;code class=&quot;highlighter-rouge&quot;&gt;export http_proxy=http://company-proxy:80&lt;/code&gt;, 然后执行的时候需要&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo -E bundle&lt;/code&gt;&lt;/p&gt;</content><author><name>kate</name></author><category term="misc" /><summary type="html">我是按照github的教程，先建repo再clone，这样的话就没法用Jekyll的Quickstar教程的jekyll new myblog了，因为已经先有文件夹了。</summary></entry><entry><title type="html">研究了下ffmpeg</title><link href="http://localhost:4000/blog/2019/10/08/use-ffmpeg.html" rel="alternate" type="text/html" title="研究了下ffmpeg" /><published>2019-10-08T00:00:00+08:00</published><updated>2019-10-08T00:00:00+08:00</updated><id>http://localhost:4000/blog/2019/10/08/use-ffmpeg</id><content type="html" xml:base="http://localhost:4000/blog/2019/10/08/use-ffmpeg.html">&lt;p&gt;用ffmpeg来压手机拍的视频，首先可以参考下这两篇&lt;a href=&quot;http://trac.ffmpeg.org/wiki/Encode/H.265&quot;&gt;FFmpeg and H.265 Encoding Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>kate</name></author><category term="ffmpeg" /><summary type="html">用ffmpeg来压手机拍的视频，首先可以参考下这两篇FFmpeg and H.265 Encoding Guide</summary></entry></feed>

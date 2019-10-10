@@ -2,11 +2,9 @@
 title: "又又又搞了个blog"
 author: kate
 categories:
-  - Post Formats
+  - misc
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - misc
 ---
 
 我是按照github的教程，先建repo再clone，这样的话就没法用Jekyll的[Quickstar教程](https://jekyllrb.com/docs/)的`jekyll new myblog`了，因为已经先有文件夹了。
