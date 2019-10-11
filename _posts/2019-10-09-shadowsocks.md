@@ -7,7 +7,7 @@ tags:
   - shadowsocks
 ---
 
-> Ubuntu 
+> Ubuntu
 
 ```shell
 apt update
