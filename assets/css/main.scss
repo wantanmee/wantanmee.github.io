@@ -5,8 +5,6 @@ sitemap: false
 
 @charset "utf-8";
 
-@import "so-simple";
-
 $serif-font-family: 'Noto Serif SC', serif;
 $sans-serif-font-family: 'Noto Sans SC', sans-serif;
 $monospace-font-family: Menlo, Consolas, Monaco, "Courier New", Courier,
@@ -17,3 +15,5 @@ $headline-font-family: $sans-serif-font-family;
 $title-font-family: $serif-font-family;
 $description-font-family: $serif-font-family;
 $meta-font-family: $serif-font-family;
+
+@import "so-simple";
