@@ -11,7 +11,8 @@ tags:
 
 官方教程需要用cURL，但是公司没法用，所以用[install Node.js via binary archive on Linux](https://github.com/nodejs/help/wiki/Installation)的方法，而且可以同时放好多个版本，需要的时候改`~/.bashrc`的`PATH`指向。
 
-> How to install Node.js via binary archive on Linux?
+> How to install Node.js via binary archive on Linux?    
+
 
 1. Unzip the binary archive to any directory you wanna install Node, I use `/usr/local/lib/nodejs`
 
